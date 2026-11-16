@@ -2,7 +2,10 @@
 
 Code, processed data and results for the paper
 
-> [Author names]. *Calibrated uncertainty for interpretable neural cause-of-death mortality forecasts: a rolling-origin re-evaluation of the convolutional autoencoder model.* Submitted to *Annals of Actuarial Science*.
+> Kalaiarasan G. *Calibrated uncertainty for interpretable neural cause-of-death mortality forecasts: a rolling-origin re-evaluation of the convolutional autoencoder model.* Submitted to *Annals of Actuarial Science*.
+
+**Author:** Kalaiarasan G, Amrita School of Artificial Intelligence, Coimbatore, Amrita Vishwa Vidyapeetham, India  
+**Contact:** kalai.forward@gmail.com
 
 The paper reproduces the convolutional autoencoder (CAE) of Tanaka & Matsuyama (2025, *Annals of Actuarial Science* 19, 442–461) with WHO data for five populations (Japan males and females, UK males and females, German males). It then:
 
@@ -96,13 +99,13 @@ the repository root.
 ## Trained models
 
 The 435 trained models used for Sections 4.2–4.5 (about 11 MB) are not stored in git. They are attached to the GitHub
-release as `models.zip`; unzip into `models/` to run steps 21 onwards without retraining.
+release [v1.0](https://github.com/kalai-arasan-g/cod-cae-calibration/releases/tag/v1.0) as `models.zip`; unzip into `models/` to run steps 21 onwards without retraining.
 
 ## Use of AI tools
 
 The code in this repository was written and run with the assistance of Claude (model Claude
 Opus 5.5, Anthropic), accessed through https://claude.ai on 15–16 November 2026, following the
-authors' instructions. This use is declared in Section 3.8 and the Acknowledgements of the paper.
+author's instructions. This use is declared in Section 3.8 and the Acknowledgements of the paper.
 
 ## Licence
 
