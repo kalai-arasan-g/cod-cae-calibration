@@ -1,0 +1,11 @@
+population,cause,min_corr_with_mean,sign_agree_old_ages
+Japan male,C3 Nervous system,0.9549391741517015,1.0
+Japan female,C3 Nervous system,0.9018633898213887,1.0
+UK male,C3 Nervous system,0.8288644170548447,1.0
+UK female,C3 Nervous system,0.8130704945773746,1.0
+Germany male,C3 Nervous system,0.9046889472380477,1.0
+Japan male,C4 Circulatory system,0.8590843921144172,1.0
+Japan female,C4 Circulatory system,0.7657840341372074,1.0
+UK male,C4 Circulatory system,0.7142762434369199,0.95
+UK female,C4 Circulatory system,0.7473830593622253,0.975
+Germany male,C4 Circulatory system,0.7471790847879334,1.0

@@ -1,0 +1,76 @@
+Mean MSE over pops x origins x h=1..5
+ kind      ensemble  single
+model                     
+RWD         0.0534  0.0588
+RW          0.0587  0.0606
+ARIMA110    0.0535  0.0587
+DAMPED      0.0535  0.0567
+
+Ensemble MSE by population
+ model     RWD      RW  ARIMA110  DAMPED
+pop                                    
+JPN_M  0.0481  0.0594    0.0485  0.0505
+JPN_F  0.0524  0.0608    0.0525  0.0540
+GBR_M  0.0517  0.0525    0.0514  0.0494
+GBR_F  0.0560  0.0575    0.0560  0.0551
+DEU_M  0.0590  0.0634    0.0590  0.0585
+
+Ensemble MSE by horizon
+ model     RWD      RW  ARIMA110  DAMPED
+h                                      
+1      0.0382  0.0386    0.0383  0.0382
+2      0.0420  0.0436    0.0419  0.0415
+3      0.0512  0.0559    0.0511  0.0512
+4      0.0625  0.0702    0.0626  0.0628
+5      0.0732  0.0854    0.0735  0.0737
+
+Wins (pop x origin, 25 cases):
+ DAMPED      17
+RWD          5
+ARIMA110     3
+Name: count, dtype: int64
+
+RWD single-seed vs ensemble MSE
+          mean     std     max  ensemble
+pop                                    
+DEU_M  0.0608  0.0083  0.0722    0.0590
+GBR_F  0.0649  0.0093  0.0924    0.0560
+GBR_M  0.0594  0.0113  0.0962    0.0517
+JPN_F  0.0572  0.0101  0.0727    0.0524
+JPN_M  0.0517  0.0101  0.0689    0.0481
+
+Interval coverage (nominal 0.80 / 0.95)
+    model               layer  level  coverage  width  score
+ARIMA110            A_latent   0.80     0.168  0.073  1.465
+ARIMA110            A_latent   0.95     0.239  0.111  5.181
+ARIMA110      B_latent+seeds   0.80     0.383  0.180  1.092
+ARIMA110      B_latent+seeds   0.95     0.484  0.243  3.308
+ARIMA110 C_latent+seeds+cell   0.80     0.626  0.356  0.800
+ARIMA110 C_latent+seeds+cell   0.95     0.803  0.542  1.406
+  DAMPED            A_latent   0.80     0.102  0.039  1.548
+  DAMPED            A_latent   0.95     0.148  0.060  5.768
+  DAMPED      B_latent+seeds   0.80     0.306  0.137  1.174
+  DAMPED      B_latent+seeds   0.95     0.380  0.172  3.880
+  DAMPED C_latent+seeds+cell   0.80     0.583  0.329  0.824
+  DAMPED C_latent+seeds+cell   0.95     0.762  0.501  1.528
+      RW            A_latent   0.80     0.252  0.132  1.381
+      RW            A_latent   0.95     0.357  0.200  4.469
+      RW      B_latent+seeds   0.80     0.347  0.174  1.168
+      RW      B_latent+seeds   0.95     0.499  0.269  3.242
+      RW C_latent+seeds+cell   0.80     0.589  0.355  0.864
+      RW C_latent+seeds+cell   0.95     0.787  0.548  1.531
+     RWD            A_latent   0.80     0.228  0.106  1.394
+     RWD            A_latent   0.95     0.318  0.161  4.699
+     RWD      B_latent+seeds   0.80     0.421  0.200  1.057
+     RWD      B_latent+seeds   0.95     0.538  0.283  3.018
+     RWD C_latent+seeds+cell   0.80     0.647  0.369  0.790
+     RWD C_latent+seeds+cell   0.95     0.824  0.565  1.352
+
+RWD 95% coverage by population
+ layer  A_latent  B_latent+seeds  C_latent+seeds+cell
+pop                                                 
+DEU_M     0.374           0.489                0.811
+GBR_F     0.153           0.543                0.834
+GBR_M     0.311           0.558                0.811
+JPN_F     0.380           0.546                0.843
+JPN_M     0.371           0.556                0.821

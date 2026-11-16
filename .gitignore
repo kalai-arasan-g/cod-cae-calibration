@@ -1,0 +1,10 @@
+# WHO raw files are not redistributed: download them yourself (data/raw/README.md)
+data/raw/*
+!data/raw/README.md
+data/processed/who_selected.csv
+# Trained models are large; they are provided as a release asset (models.zip)
+models/
+jobs/
+__pycache__/
+*.pyc
+.DS_Store
