@@ -101,12 +101,6 @@ the repository root.
 The 435 trained models used for Sections 4.2–4.5 (about 11 MB) are not stored in git. They are attached to the GitHub
 release [v1.0](https://github.com/kalai-arasan-g/cod-cae-calibration/releases/tag/v1.0) as `models.zip`; unzip into `models/` to run steps 21 onwards without retraining.
 
-## Use of AI tools
-
-The code in this repository was written and run with the assistance of Claude (model Claude
-Opus 5.5, Anthropic), accessed through https://claude.ai on 15–16 November 2026, following the
-author's instructions. This use is declared in Section 3.8 and the Acknowledgements of the paper.
-
 ## Licence
 
 Code: MIT licence (see `LICENSE`). The processed data are derived from the WHO Mortality
