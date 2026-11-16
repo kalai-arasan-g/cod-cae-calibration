@@ -2,7 +2,7 @@
 
 Code, processed data and results for the paper
 
-> Kalaiarasan G. *Calibrated uncertainty for interpretable neural cause-of-death mortality forecasts: a rolling-origin re-evaluation of the convolutional autoencoder model.* Submitted to *Annals of Actuarial Science*.
+> Kalaiarasan G. *Calibrated prediction intervals for an interpretable neural network approach to cause-of-death mortality forecasting* Submitted to *Annals of Actuarial Science*.
 
 **Author:** Kalaiarasan G, Amrita School of Artificial Intelligence, Coimbatore, Amrita Vishwa Vidyapeetham, India  
 **Contact:** kalai.forward@gmail.com
